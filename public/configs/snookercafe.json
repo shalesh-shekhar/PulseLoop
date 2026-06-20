@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "slug": "snookercafe",
+    "version": "1.0",
+    "redirectDelay": 3
+  },
+  "business": {
+    "id": "snookercafe",
+    "name": "Snooker Cafe"
+  },
+  "branding": {
+    "brandName": "Snooker Cafe",
+    "tagline": "Play. Relax. Enjoy.",
+    "logoType": "icon",
+    "logo": "🎱"
+  },
+  "theme": {
+    "fontPrimary": "Inter",
+    "fontHeading": "Montserrat",
+    "colors": {
+      "primary": "#1E8E3E",
+      "background": "#0B0F0B",
+      "surface": "#182118",
+      "text": "#FFFFFF",
+      "mutedText": "#A0A0A0",
+      "accent": "#4ADE80"
+    }
+  },
+  "ratings": {
+    "type": "emoji",
+    "positiveRatings": ["good", "amazing"]
+  },
+  "feedback": {
+    "categories": [
+      "Tables",
+      "Equipment",
+      "Service",
+      "Food",
+      "Atmosphere"
+    ],
+    "placeholder": "Tell us how we can improve your experience..."
+  },
+  "integrations": {
+    "review": {
+      "googleReviewUrl": "https://g.page/r/snookercafe/review"
+    },
+    "feedback": {
+      "type": "google-sheet",
+      "webhook": "https://script.google.com/macros/s/AKfycby_701EdVBlsjMGYgSIwIcq2G09PjZGxH9EJ_p3fQ3Oo5b_HRbF1yKBHiHFfunvMBl2/exec"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&family=Playfair+Display:wght@400;600&family=Montserrat:wght@400;500;600&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: var(--color-primary);
+  --color-background: var(--color-background);
+  --color-surface: var(--color-surface);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted-text);
+  --color-accent: var(--color-accent);
+  --color-charcoal: var(--color-text);
+  --color-cream: var(--color-background);
+  --color-beige: var(--color-surface);
+  --color-gold: var(--color-primary);
+  --color-orange: var(--color-accent);
+  --font-sans: var(--font-primary), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --color-primary: #d4a017;
+    --color-background: #111111;
+    --color-surface: #1a1a1a;
+    --color-text: #ffffff;
+    --color-muted-text: #999999;
+    --color-accent: #f5d06f;
+    --font-primary: "Inter";
+    --font-heading: "Space Grotesk";
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "meta": {
+    "slug": "default",
+    "version": "1.0",
+    "redirectDelay": 3
+  },
+  "business": {
+    "id": "default",
+    "name": "Feedback Hub"
+  },
+  "branding": {
+    "brandName": "Feedback Hub",
+    "tagline": "We value your feedback.",
+    "logoType": "image",
+    "logoUrl": "/logo/default.png"
+  },
+  "theme": {
+    "fontPrimary": "Inter",
+    "fontHeading": "Space Grotesk",
+    "colors": {
+      "primary": "#D4A017",
+      "background": "#111111",
+      "surface": "#1A1A1A",
+      "text": "#FFFFFF",
+      "mutedText": "#999999",
+      "accent": "#F5D06F"
+    }
+  },
+  "ratings": {
+    "type": "emoji",
+    "positiveRatings": ["amazing"]
+  },
+  "feedback": {
+    "categories": [
+      "Service",
+      "Staff",
+      "Pricing",
+      "Cleanliness",
+      "Other"
+    ],
+    "placeholder": "Tell us more about your experience..."
+  },
+  "integrations": {
+    "review": {
+      "googleReviewUrl": ""
+    },
+
+    "feedback": {
+      "type": "google-sheet",
+      "webhook": "https://script.google.com/macros/s/AKfycby_701EdVBlsjMGYgSIwIcq2G09PjZGxH9EJ_p3fQ3Oo5b_HRbF1yKBHiHFfunvMBl2/exec"
+    },
+
+    "notifications": {
+      "enabled": false
+    }
+  },
+  "animations": {
+    "enabled": true,
+    "pageTransition": "slideUp"
+  }
+}

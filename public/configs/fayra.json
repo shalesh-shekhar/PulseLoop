@@ -1,0 +1,59 @@
+{
+  "meta": {
+    "slug": "fayra",
+    "version": "1.0",
+    "redirectDelay": 4
+  },
+  "business": {
+    "id": "fayra",
+    "name": "FAYRA"
+  },
+  "branding": {
+    "brandName": "FAYRA",
+    "tagline": "Body. Mind. Purpose.",
+    "logoType": "image",
+    "logoUrl": "/logo/fayra.png"
+  },
+  "theme": {
+    "fontPrimary": "Inter",
+    "fontHeading": "Cinzel",
+    "colors": {
+      "primary": "#D4A017",
+      "background": "#111111",
+      "surface": "#1A1A1A",
+      "text": "#FFFFFF",
+      "mutedText": "#A0A0A0",
+      "accent": "#F5D06F"
+    }
+  },
+  "ratings": {
+    "type": "score",
+    "min": 1,
+    "max": 10,
+    "positiveRatings": [8, 9, 10]
+  },
+  "feedback": {
+    "categories": [
+      "Programs",
+      "Nutrition",
+      "Coaching",
+      "Community",
+      "Website"
+    ],
+    "placeholder": "Tell us how we can better support your journey..."
+  },
+  "integrations": {
+    "review": {
+      "googleReviewUrl": "https://g.page/r/fayra/review"
+    },
+
+    "feedback": {
+      "type": "google-sheet",
+      "webhook": "https://script.google.com/macros/s/AKfycby_701EdVBlsjMGYgSIwIcq2G09PjZGxH9EJ_p3fQ3Oo5b_HRbF1yKBHiHFfunvMBl2/exec"
+    },
+
+    "notifications": {
+      "enabled": false
+    }
+  }
+}

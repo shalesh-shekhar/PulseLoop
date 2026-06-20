@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "slug": "lumina",
+    "version": "1.0",
+    "redirectDelay": 5
+  },
+  "business": {
+    "id": "lumina",
+    "name": "Lumina Cafe"
+  },
+  "branding": {
+    "brandName": "Lumina Cafe",
+    "tagline": "Coffee crafted with care.",
+    "logoType": "image",
+    "logoUrl": "/logo/lumina.png"
+  },
+  "theme": {
+    "fontPrimary": "Inter",
+    "fontHeading": "Playfair Display",
+    "colors": {
+      "primary": "#C9A227",
+      "background": "#141414",
+      "surface": "#1F1F1F",
+      "text": "#F7F2E8",
+      "mutedText": "#B8B0A3",
+      "accent": "#F5D06F"
+    }
+  },
+  "ratings": {
+    "type": "stars",
+    "maxStars": 5,
+    "positiveRatings": [4, 5]
+  },
+  "feedback": {
+    "categories": [
+      "Food",
+      "Service",
+      "Pricing",
+      "Atmosphere",
+      "Cleanliness"
+    ],
+    "placeholder": "Tell us about your visit..."
+  },
+  "integrations": {
+    "review": {
+      "googleReviewUrl": "https://g.page/r/lumina/review"
+    },
+
+    "feedback": {
+      "type": "google-sheet",
+      "webhook": "https://script.google.com/macros/s/AKfycby_701EdVBlsjMGYgSIwIcq2G09PjZGxH9EJ_p3fQ3Oo5b_HRbF1yKBHiHFfunvMBl2/exec"
+    },
+
+    "notifications": {
+      "enabled": false
+    }
+  }
+}

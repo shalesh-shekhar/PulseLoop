@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "slug": "prime-smoke-n-snook",
+    "version": "1.0",
+    "redirectDelay": 4
+  },
+
+  "business": {
+    "id": "prime-smoke-n-snook",
+    "name": "Prime Smoke N Snook Cafe"
+  },
+
+  "branding": {
+    "brandName": "Prime Smoke N Snook Cafe",
+    "tagline": "Play. Smoke. Chill.",
+    "logoType": "image",
+    "logoUrl": "/logos/prime-smoke-n-snook.svg"
+  },
+
+  "theme": {
+    "fontPrimary": "Inter",
+    "fontHeading": "Montserrat",
+
+    "colors": {
+      "primary": "#1E8E3E",
+      "background": "#0D0D0D",
+      "surface": "#1A1A1A",
+      "text": "#FFFFFF",
+      "mutedText": "#A0A0A0",
+      "accent": "#4ADE80"
+    }
+  },
+
+  "content": {
+    "welcome": {
+      "feedbackMessage": "We'd love your feedback.",
+      "ratingQuestion": "How was your experience today?"
+    },
+
+    "positiveFlow": {
+      "headline": "Thank you 💚",
+      "subtext": "We're glad you enjoyed your visit.",
+      "countdownMessage": "Redirecting to Google in {seconds}...",
+      "continueButton": "Leave Review",
+      "loadingMessage": "Opening Google..."
+    },
+
+    "feedbackFlow": {
+      "goodHeading": "How can we make your next visit even better?",
+      "neutralHeading": "What was missing from your experience?",
+      "negativeHeading": "We're sorry your experience wasn't great.",
+
+      "categoryHeading": "What could be better?",
+
+      "additionalThoughtsLabel": "Additional Thoughts",
+
+      "textareaPlaceholder": "Tell us more about your experience...",
+
+      "submitButton": "Submit Feedback"
+    },
+
+    "finalScreen": {
+      "positiveThankYou": "Thank you for supporting us.",
+      "negativeThankYou": "Thank you for helping us improve."
+    }
+  },
+
+  "ratings": {
+    "type": "stars",
+
+    "maxStars": 5,
+
+    "positiveRatings": [
+      4,
+      5
+    ]
+  },
+
+  "feedback": {
+    "headings": {
+      "good": "What would make your next visit a 5-star experience?",
+      "neutral": "What was missing from your visit?",
+      "negative": "We're genuinely sorry we missed the mark."
+    },
+
+    "categories": [
+      "Snooker Tables",
+      "Food",
+      "Drinks",
+      "Service",
+      "Pricing",
+      "Wait Time",
+      "Cleanliness",
+      "Atmosphere",
+      "Other"
+    ],
+
+    "placeholder": "Tell us about your experience at Prime Smoke N Snook Cafe...",
+
+    "required": false,
+
+    "minimumCharacters": 0,
+
+    "maximumCharacters": 500,
+
+    "requireTextWhenOtherSelected": true,
+
+    "allowMultipleCategories": true
+  },
+
+  "integrations": {
+    "review": {
+      "googleReviewUrl": "https://g.page/r/CevZsGTt2F7KEAE/review"
+    },
+
+    "feedback": {
+      "type": "google-sheet",
+      "webhook": "https://script.google.com/macros/s/AKfycby_701EdVBlsjMGYgSIwIcq2G09PjZGxH9EJ_p3fQ3Oo5b_HRbF1yKBHiHFfunvMBl2/exec"
+    },
+
+    "notifications": {
+      "enabled": false
+    }
+  },
+
+  "animations": {
+    "enabled": true,
+    "pageTransition": "slideUp",
+    "transitionDuration": 0.5,
+    "buttonHoverScale": 1.05,
+    "buttonTapScale": 0.95
+  }
+}
