@@ -9,7 +9,7 @@ import { RatingApp } from "./pages/RatingApp";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/PulseLoop">
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/rating" element={<RatingApp />} />

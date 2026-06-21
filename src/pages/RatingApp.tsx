@@ -28,22 +28,46 @@ export function RatingApp() {
 
   useEffect(() => {
     const fetchConfig = async () => {
-      if (!slug || slug.trim() === "") {
-        setConfigError(true);
-        setIsLoadingConfig(false);
-        return;
+      let currentSlug = slug;
+      if (!currentSlug || currentSlug.trim() === "") {
+        currentSlug = "default";
       }
 
       try {
-        const res = await fetch(`/configs/${slug}.json`);
+        const res = await fetch(
+          `${import.meta.env.BASE_URL}configs/${currentSlug}.json`,
+        );
         if (!res.ok) throw new Error("Not found");
         const data = await res.json();
-        const validConfig = validateConfig(data, `${slug}.json`);
+        const validConfig = validateConfig(data, `${currentSlug}.json`);
         setConfig(validConfig);
         applyTheme(validConfig.theme);
       } catch (err) {
-        console.warn("Failed to load config for slug:", slug);
-        setConfigError(true);
+        if (currentSlug === "default") {
+          console.error("Failed to load default config:", err);
+          setConfigError(true);
+        } else {
+          console.warn(
+            "Failed to load config for slug, attempting default fallback:",
+            currentSlug,
+          );
+          try {
+            const fallbackRes = await fetch(
+              `${import.meta.env.BASE_URL}configs/default.json`,
+            );
+            if (!fallbackRes.ok) throw new Error("Default config not found");
+            const fallbackData = await fallbackRes.json();
+            const validFallbackConfig = validateConfig(
+              fallbackData,
+              `default.json`,
+            );
+            setConfig(validFallbackConfig);
+            applyTheme(validFallbackConfig.theme);
+          } catch (fallbackErr) {
+            console.error("Failed to load default config:", fallbackErr);
+            setConfigError(true);
+          }
+        }
       } finally {
         setIsLoadingConfig(false);
       }
