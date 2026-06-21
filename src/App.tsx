@@ -9,7 +9,7 @@ import { RatingApp } from "./pages/RatingApp";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/PulseLoop">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/rating" element={<RatingApp />} />
