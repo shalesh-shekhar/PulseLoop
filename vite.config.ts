@@ -6,7 +6,6 @@ import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig(() => {
   return {
-    base: "/PulseLoop/",
     plugins: [
       react(),
       tailwindcss(),
@@ -83,4 +82,4 @@ export default defineConfig(() => {
       watch: process.env.DISABLE_HMR === "true" ? null : {},
     },
   };
-}); 
+});
